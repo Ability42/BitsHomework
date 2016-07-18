@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7893FCBD1D3CA2D100BD3946"
+               BuildableName = "BitsHomework.app"
+               BlueprintName = "BitsHomework"
+               ReferencedContainer = "container:BitsHomework.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7893FCD61D3CA2D100BD3946"
+               BuildableName = "BitsHomeworkTests.xctest"
+               BlueprintName = "BitsHomeworkTests"
+               ReferencedContainer = "container:BitsHomework.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7893FCE11D3CA2D100BD3946"
+               BuildableName = "BitsHomeworkUITests.xctest"
+               BlueprintName = "BitsHomeworkUITests"
+               ReferencedContainer = "container:BitsHomework.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7893FCBD1D3CA2D100BD3946"
+            BuildableName = "BitsHomework.app"
+            BlueprintName = "BitsHomework"
+            ReferencedContainer = "container:BitsHomework.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7893FCBD1D3CA2D100BD3946"
+            BuildableName = "BitsHomework.app"
+            BlueprintName = "BitsHomework"
+            ReferencedContainer = "container:BitsHomework.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7893FCBD1D3CA2D100BD3946"
+            BuildableName = "BitsHomework.app"
+            BlueprintName = "BitsHomework"
+            ReferencedContainer = "container:BitsHomework.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -15,6 +15,7 @@
 		7893FCD11D3CA2D100BD3946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7893FCCF1D3CA2D100BD3946 /* LaunchScreen.storyboard */; };
 		7893FCDC1D3CA2D100BD3946 /* BitsHomeworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7893FCDB1D3CA2D100BD3946 /* BitsHomeworkTests.m */; };
 		7893FCE71D3CA2D100BD3946 /* BitsHomeworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7893FCE61D3CA2D100BD3946 /* BitsHomeworkUITests.m */; };
+		7893FCF61D3CA32000BD3946 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 7893FCF51D3CA32000BD3946 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		7893FCE21D3CA2D100BD3946 /* BitsHomeworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsHomeworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7893FCE61D3CA2D100BD3946 /* BitsHomeworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitsHomeworkUITests.m; sourceTree = "<group>"; };
 		7893FCE81D3CA2D100BD3946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7893FCF41D3CA32000BD3946 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		7893FCF51D3CA32000BD3946 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				7893FCC51D3CA2D100BD3946 /* AppDelegate.m */,
 				7893FCC71D3CA2D100BD3946 /* ViewController.h */,
 				7893FCC81D3CA2D100BD3946 /* ViewController.m */,
+				7893FCF41D3CA32000BD3946 /* Student.h */,
+				7893FCF51D3CA32000BD3946 /* Student.m */,
 				7893FCCA1D3CA2D100BD3946 /* Main.storyboard */,
 				7893FCCD1D3CA2D100BD3946 /* Assets.xcassets */,
 				7893FCCF1D3CA2D100BD3946 /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 				7893FCC91D3CA2D100BD3946 /* ViewController.m in Sources */,
 				7893FCC61D3CA2D100BD3946 /* AppDelegate.m in Sources */,
 				7893FCC31D3CA2D100BD3946 /* main.m in Sources */,
+				7893FCF61D3CA32000BD3946 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
