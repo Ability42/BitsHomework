@@ -20,14 +20,11 @@
     // Override point for customization after application launch.
 
     
-#pragma mark --PupilLevel
+#pragma mark -PupilLevel
     NSMutableArray* studentHeap = [NSMutableArray array];
     
     for (int i = 0; i < 10; i++) {
         Student* student = [[Student alloc] init];
-
-        
-        [studentHeap addObject:student];
         
         NSInteger randSubjectInStudents = 0;
         for (int j = 0; j < 9; j++) {
@@ -36,28 +33,48 @@
         
         student.subjectType = randSubjectInStudents;
         [studentHeap addObject:student];
-        
-        NSLog(@"Student %0d\n%@\n", i, student);
-        
-#pragma mark --StudentLevel
+    }
+    
+//        NSLog(@"Student %0d\n%@\n", i, student);
+    int countStudents = 0;
+    for (Student* fellow in studentHeap) {
+        NSLog(@"Student %d:\n %@",countStudents ,fellow);
+        countStudents++;
+    }
+    
+#pragma mark StudentLevel
         
         // create techArray
-        NSMutableArray *engeenears = [NSMutableArray array];
-        NSMutableArray *gumanitaries = [NSMutableArray array];
-        NSUInteger devCount = 0;
+    NSMutableArray *engeenears = [NSMutableArray array];
+    NSMutableArray *gumanitaries = [NSMutableArray array];
+    NSUInteger devCount = 0;
         
-        for (Student* fellow in studentHeap) {
-            if (fellow.subjectType & SPStudentSubjectTypeMath) {
-                [engeenears addObject:fellow];
-            } else {
-                [gumanitaries addObject:fellow];
-            }
-            
-            if (fellow.subjectType & SPStudentSubjectTypeDevelopment) {
-                devCount++;
-            }
+    for (Student* fellow in studentHeap) {
+        if (fellow.subjectType & SPStudentSubjectTypeMath) {
+            [engeenears addObject:fellow];
+        } else {
+            [gumanitaries addObject:fellow];
+        }
+        
+        if (fellow.subjectType & SPStudentSubjectTypeDevelopment) {
+            devCount++;
         }
     }
+
+
+    
+#pragma mark MasterLevel
+    int countSt = 0;
+    for (Student* fellow in studentHeap) {
+        
+        if (fellow.subjectType & SPStudentSubjectTypeBiology) {
+            fellow.subjectType = fellow.subjectType ^ SPStudentSubjectTypeBiology;
+            
+        }
+        NSLog(@"Student %d:\n %@",countSt ,fellow);
+        countSt++;
+    }
+    
     
     return YES;
 }

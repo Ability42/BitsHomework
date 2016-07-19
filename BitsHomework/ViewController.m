@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        NSLog(@"FIRST LOG");
+    });
+    NSLog(@"SECOND LOG");
     // Do any additional setup after loading the view, typically from a nib.
 }
 

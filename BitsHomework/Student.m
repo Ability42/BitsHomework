@@ -16,15 +16,15 @@
 
 - (NSString*) description {
     return [NSString stringWithFormat:@"Student studied:\n"
-            @"Art - %@\n"
-            @"Astronomy - %@\n"
             @"Biology - %@\n"
+            @"Math - %@\n"
             @"Development - %@\n"
             @"Engeneering - %@\n"
+            @"Art - %@\n"
             @"MachineLearning - %@\n"
-            @"Math - %@\n"
+            @"Psycology - %@\n"
             @"Physics - %@\n"
-            @"Psycology - %@\n",
+            @"Astronomy - %@\n",
             [self answerByType:SPStudentSubjectTypeBiology],
             [self answerByType:SPStudentSubjectTypeMath],
             [self answerByType:SPStudentSubjectTypeDevelopment],
