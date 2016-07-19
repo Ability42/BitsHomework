@@ -20,13 +20,13 @@
     // Override point for customization after application launch.
 
     
-#pragma mark -PupilLevel
+#pragma mark Pupil level
     NSMutableArray* studentHeap = [NSMutableArray array];
     
     for (int i = 0; i < 10; i++) {
         Student* student = [[Student alloc] init];
         
-        NSInteger randSubjectInStudents = 0;
+        NSUInteger randSubjectInStudents = 0;
         for (int j = 0; j < 9; j++) {
             randSubjectInStudents = randSubjectInStudents | (arc4random()%2 << j);
         }
@@ -36,13 +36,13 @@
     }
     
 //        NSLog(@"Student %0d\n%@\n", i, student);
-    int countStudents = 0;
+    NSUInteger countStudents = 0;
     for (Student* fellow in studentHeap) {
-        NSLog(@"Student %d:\n %@",countStudents ,fellow);
+        NSLog(@"Student %lu:\n %@",(unsigned long)countStudents ,fellow);
         countStudents++;
     }
     
-#pragma mark StudentLevel
+#pragma mark StudentL level
         
         // create techArray
     NSMutableArray *engeenears = [NSMutableArray array];
@@ -63,18 +63,35 @@
 
 
     
-#pragma mark MasterLevel
-    int countSt = 0;
+#pragma mark Master level
+    NSUInteger countSt = 0;
     for (Student* fellow in studentHeap) {
         
         if (fellow.subjectType & SPStudentSubjectTypeBiology) {
-            fellow.subjectType = fellow.subjectType ^ SPStudentSubjectTypeBiology;
+            fellow.subjectType = fellow.subjectType ^ SPStudentSubjectTypeBiology ^ SPStudentSubjectTypeDevelopment;
             
         }
-        NSLog(@"Student %d:\n %@",countSt ,fellow);
+        NSLog(@"Student %lu:\n %@",(unsigned long)countSt ,fellow);
         countSt++;
     }
     
+#pragma mark Superman level
+    NSInteger randInt = arc4random();
+    NSMutableString *bit = [[NSMutableString alloc] initWithCapacity:35];
+    NSInteger bitMask = 1;
+    for (int count = 0; count < sizeof(randInt)*4; count++) {
+        if (count == 8 || count == 16 || count == 24) {
+            [bit insertString:@" " atIndex:0];
+        }
+        if (randInt & bitMask) {
+            [bit insertString:@"1" atIndex:0];
+        } else {
+            [bit insertString:@"0" atIndex:0];
+        }
+        bitMask = bitMask << 1;
+    }
+    NSLog(@"Integer: %ld\nBit: %@", (long)randInt, bit);
+
     
     return YES;
 }
